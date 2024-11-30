@@ -5,8 +5,9 @@ import { contactInfoArray } from "./data";
 function App() {
   return (
     <section>
-      {contactInfoArray.map((contactInfo) => (
+      {contactInfoArray.map((contactInfo, id) => (
         <ContactCard
+          key={id}
           name={contactInfo.name}
           about={contactInfo.about}
           avatar={contactInfo.avatar}

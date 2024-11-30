@@ -6,12 +6,17 @@ export type ContactProps = {
   fc_number?: number;
 };
 
+const fetchAvatar = () => {
+  const randomId = Math.floor(Math.random() * 100);
+  return `https://avatar.iran.liara.run/public/${randomId}`;
+};
+
 export const contactInfoArray: ContactProps[] = [
   {
     name: "Marina Yordanova",
     about:
       "I'm a student at FMI. I love trying new food and spending time with my friends. I have a pet - her name is Bella and she is the most beautiful Golden Retriever!",
-    avatar: "",
+    avatar: fetchAvatar(),
     email: "marinayordanova01@gmail.com",
     fc_number: 82091,
   },
@@ -19,7 +24,7 @@ export const contactInfoArray: ContactProps[] = [
     name: "Yana Zheleva",
     about:
       "I'm a software engineer. I love going out with friends and having fun.",
-    avatar: "",
+    avatar: fetchAvatar(),
     email: "yana.zheleva0@gmail.com",
     fc_number: 81995,
   },
