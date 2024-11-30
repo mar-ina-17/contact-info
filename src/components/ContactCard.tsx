@@ -1,12 +1,6 @@
 import React from "react";
 import "./ContactCard.css";
-interface ContactProps {
-  name: string;
-  about?: string;
-  avatar?: string;
-  email?: string;
-  fc_number?: number;
-}
+import { ContactProps } from "../data";
 
 const ContactInfo: React.FC<ContactProps> = ({
   name,
