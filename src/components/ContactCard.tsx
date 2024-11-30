@@ -2,7 +2,7 @@ import React from "react";
 import "./ContactCard.css";
 import { ContactProps } from "../data";
 
-const ContactInfo: React.FC<ContactProps> = ({
+const ContactCard: React.FC<ContactProps> = ({
   name,
   about,
   avatar,
@@ -28,4 +28,4 @@ const ContactInfo: React.FC<ContactProps> = ({
   );
 };
 
-export default ContactInfo;
+export default ContactCard;

@@ -1,12 +1,19 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import ContactInfo from "./components/ContactCard";
+import ContactCard from "./components/ContactCard";
+import { contactInfoArray } from "./data";
 
 function App() {
   return (
     <section>
-      <ContactInfo name="Maya" />
+      {contactInfoArray.map((contactInfo) => (
+        <ContactCard
+          name={contactInfo.name}
+          about={contactInfo.about}
+          avatar={contactInfo.avatar}
+          email={contactInfo.email}
+          fc_number={contactInfo.fc_number}
+        />
+      ))}
     </section>
   );
 }

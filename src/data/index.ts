@@ -6,12 +6,12 @@ export type ContactProps = {
   fc_number?: number;
 };
 
-export const ContactInfoArray: ContactProps[] = [
+export const contactInfoArray: ContactProps[] = [
   {
     name: "Marina Yordanova",
     about:
       "I'm a student at FMI. I love trying new food and spending time with my friends. I have a pet - her name is Bella and she is the most beautiful Golden Retriever!",
-    avatar: "https://example.com/marina_avatar.jpg",
+    avatar: "",
     email: "marinayordanova01@gmail.com",
     fc_number: 82091,
   },
@@ -19,7 +19,7 @@ export const ContactInfoArray: ContactProps[] = [
     name: "Yana Zheleva",
     about:
       "I'm a software engineer. I love going out with friends and having fun.",
-    avatar: "https://example.com/nikola_avatar.jpg",
+    avatar: "",
     email: "yana.zheleva0@gmail.com",
     fc_number: 81995,
   },
