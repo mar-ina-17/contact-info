@@ -6,7 +6,7 @@ export type ContactProps = {
   fc_number?: number;
 };
 
-const fetchAvatar = () => {
+export const fetchAvatar = () => {
   const randomId = Math.floor(Math.random() * 100);
   return `https://avatar.iran.liara.run/public/${randomId}`;
 };

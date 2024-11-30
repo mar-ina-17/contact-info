@@ -1,0 +1,21 @@
+/* Center the header */
+.app-header {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.4rem;
+  text-wrap: balanced;
+  color: #333;
+}
+
+/* Ensure the contact section styling remains intact */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+body {
+  background-color: #d1d1da;
+}
