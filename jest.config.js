@@ -1,11 +1,9 @@
 module.exports = {
-  moduleNameMapper: {
-    "\\.(css|less)$": "<rootDir>/test/jest/__mocks__/styleMock.js",
-  },
   transform: {
-    "^.+\\.(js|jsx|ts|tsx)$": "babel-jest", // Use babel-jest to transpile
+    "^.+\\.(js|jsx|ts|tsx)$": "babel-jest",
   },
   transformIgnorePatterns: [
-    "node_modules/(?!(@adobe/css-tools)/)", // Add problematic modules here
+    "node_modules/(?!(\\@adobe/css-tools)/)", // Ensure Adobe CSS Tools gets transpiled
   ],
+  testEnvironment: "jsdom",
 };
