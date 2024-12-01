@@ -12,6 +12,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions: # Move permissions to the job level
+      contents: write
+
     strategy:
       matrix:
         node-version: [18.x]
@@ -35,8 +38,6 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        permissions:
-          contents: write
         env:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
