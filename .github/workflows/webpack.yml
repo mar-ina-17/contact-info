@@ -35,6 +35,8 @@ jobs:
         run: npm run build
 
       - name: Deploy
+        permissions:
+          contents: write
         env:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
