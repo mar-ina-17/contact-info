@@ -10,7 +10,7 @@ const ContactCard: React.FC<ContactProps> = ({
   fc_number,
 }: ContactProps) => {
   return (
-    <div className="contact-card">
+    <article className="contact-card">
       <div className="contact-avatar">
         <img src={avatar || "https://via.placeholder.com/100"} alt={name} />
       </div>
@@ -24,7 +24,7 @@ const ContactCard: React.FC<ContactProps> = ({
         )}
         {fc_number && <p className="contact-number">FC Number: {fc_number}</p>}
       </div>
-    </div>
+    </article>
   );
 };
 
