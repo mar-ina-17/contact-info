@@ -1,4 +1,4 @@
-name: CI/CD
+name: CI + DEV build on gh pages
 
 on:
   push:
