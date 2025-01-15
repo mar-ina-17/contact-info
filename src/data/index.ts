@@ -26,6 +26,6 @@ export const contactInfoArray: ContactProps[] = [
       "I'm a software engineer. I love going out with friends and having fun.",
     avatar: fetchAvatar(),
     email: "yana.zheleva0@gmail.com",
-    fc_number: 81995,
+    fc_number: 99999,
   },
 ];
