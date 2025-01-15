@@ -26,6 +26,6 @@ export const contactInfoArray: ContactProps[] = [
       "",
     avatar: fetchAvatar(),
     email: "yana.zheleva0@gmail.com",
-    fc_number: 99999,
+    fc_number: 11111,
   },
 ];
