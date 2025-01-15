@@ -38,6 +38,7 @@ jobs:
         run: npm run build
 
       - name: Deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
