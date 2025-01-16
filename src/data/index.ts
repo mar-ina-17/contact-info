@@ -23,9 +23,9 @@ export const contactInfoArray: ContactProps[] = [
   {
     name: "Yana Zheleva",
     about:
-      "",
+      "I'm a student at FMI. I love extreme sports.",
     avatar: fetchAvatar(),
     email: "yana.zheleva0@gmail.com",
-    fc_number: 11111,
+    fc_number: 81995,
   },
 ];
